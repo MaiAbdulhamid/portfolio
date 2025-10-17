@@ -54,13 +54,11 @@ document.querySelectorAll(".tech-item").forEach((item) => {
 // Project card interactions
 document.querySelectorAll(".project-card").forEach((card) => {
   card.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-15px)";
-    this.style.boxShadow = "0 25px 50px rgba(0, 0, 0, 0.4)";
+    this.style.transform = "translateY(-10px)";
   });
 
   card.addEventListener("mouseleave", function () {
     this.style.transform = "translateY(0)";
-    this.style.boxShadow = "none";
   });
 });
 

@@ -473,20 +473,8 @@ nav {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
-.project-card a {
-  text-decoration: none;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.project-card a:hover {
-  color: rgb(203, 203, 203);
-  transform: scale(1.02);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -543,6 +531,52 @@ nav {
   border-radius: 20px;
   font-size: 0.8rem;
   border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid;
+}
+
+.btn-github {
+  background: transparent;
+  color: var(--text-light);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-github:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.btn-demo {
+  background: var(--gradient-2);
+  color: white;
+  border-color: transparent;
+}
+
+.btn-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
 }
 
 /* Contact Section */
@@ -650,6 +684,14 @@ nav {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
   }
 }
 
