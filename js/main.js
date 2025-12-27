@@ -11,6 +11,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+// Expandable project details
+document.querySelectorAll(".project-card").forEach((card) => {
+  const btn = card.querySelector(".expand-btn");
+  const details = card.querySelector(".project-subsections");
+
+  if (!btn || !details) return;
+
+  btn.addEventListener("click", () => {
+    const isCollapsed = details.classList.toggle("collapsed");
+
+    btn.textContent = isCollapsed ? "Show details ↓" : "Hide details ↑";
+
+    btn.setAttribute("aria-expanded", String(!isCollapsed));
+  });
+});
 
 // Scroll animations
 const observerOptions = {
@@ -63,62 +78,66 @@ document.querySelectorAll(".project-card").forEach((card) => {
 });
 
 // Form submission handler using Web3Forms
-document.querySelector("#contact-form").addEventListener("submit", async function (e) {
-  e.preventDefault();
+document
+  .querySelector("#contact-form")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-  const button = this.querySelector("button[type='submit']");
-  const originalHTML = button.innerHTML;
+    const button = this.querySelector("button[type='submit']");
+    const originalHTML = button.innerHTML;
 
-  // Show loading state
-  button.innerHTML = "Sending... ⏳";
-  button.disabled = true;
+    // Show loading state
+    button.innerHTML = "Sending... ⏳";
+    button.disabled = true;
 
-  // Get form data
-  const formData = new FormData(this);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
+    // Get form data
+    const formData = new FormData(this);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (result.success) {
-      // Show success message
-      button.innerHTML = "✅ Message Sent!";
-      button.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
+      if (result.success) {
+        // Show success message
+        button.innerHTML = "✅ Message Sent!";
+        button.style.background =
+          "linear-gradient(135deg, #10b981 0%, #059669 100%)";
 
-      // Reset form after delay
+        // Reset form after delay
+        setTimeout(() => {
+          button.innerHTML = originalHTML;
+          button.style.background = "";
+          button.disabled = false;
+          this.reset();
+        }, 3000);
+      } else {
+        throw new Error(result.message || "Something went wrong");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Show error message
+      button.innerHTML = "❌ Failed to send";
+      button.style.background =
+        "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)";
+
       setTimeout(() => {
         button.innerHTML = originalHTML;
         button.style.background = "";
         button.disabled = false;
-        this.reset();
       }, 3000);
-    } else {
-      throw new Error(result.message || "Something went wrong");
     }
-  } catch (error) {
-    console.error("Error:", error);
-
-    // Show error message
-    button.innerHTML = "❌ Failed to send";
-    button.style.background = "linear-gradient(135deg, #ef4444 0%, #dc2626 100%)";
-
-    setTimeout(() => {
-      button.innerHTML = originalHTML;
-      button.style.background = "";
-      button.disabled = false;
-    }, 3000);
-  }
-});
+  });
 
 // Typing animation for code window
 const codeLines = document.querySelectorAll(".code-line");

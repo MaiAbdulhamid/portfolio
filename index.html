@@ -3,543 +3,284 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mai Abd El-hameed - Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Animated Background -->
-    <div class="animated-bg">
-      <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-      </div>
-    </div>
+    <title>Mai Abd El-hameed | Frontend Developer</title>
 
-    <!-- Navigation -->
-    <nav>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
       <div class="nav-container">
-        <div class="logo">Mai Abd El-hameed</div>
+        <span class="logo">Mai Abd El-hameed</span>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="cta-nav">Get In Touch</a>
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-container">
-        <div class="hero-content">
-          <div class="hero-badge">✨ Frontend Developer</div>
-          <h1 class="hero-title">Building Modern Web Experiences</h1>
-          <p class="hero-subtitle">
-            Specializing in React, Next.js, and TypeScript to create stunning,
-            performant applications that deliver exceptional user experiences.
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn-primary">
-              View My Work
-              <span>→</span>
-            </a>
-            <a href="#contact" class="btn-secondary">
-              Contact Me
-              <span>💬</span>
-            </a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-number">4+</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">20+</div>
-              <div class="stat-label">Projects Completed</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">5</div>
-              <div class="stat-label">Companies Worked</div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-animation">
-          <div class="code-window">
-            <div class="window-header">
-              <div class="window-dot dot-red"></div>
-              <div class="window-dot dot-yellow"></div>
-              <div class="window-dot dot-green"></div>
-            </div>
-            <div class="code-content">
-              <div class="code-line">
-                <span class="keyword">const</span>
-                <span class="function">developer</span> = {
-              </div>
-              <div class="code-line">
-                &nbsp;&nbsp;name:
-                <span class="string">'Mai Abd El-hameed'</span>,
-              </div>
-              <div class="code-line">
-                &nbsp;&nbsp;skills: [<span class="string">'React'</span>,
-                <span class="string">'Next.js'</span>,
-                <span class="string">'TypeScript'</span>],
-              </div>
-              <div class="code-line">
-                &nbsp;&nbsp;passionate: <span class="keyword">true</span>,
-              </div>
-              <div class="code-line">};</div>
-            </div>
-          </div>
+        <h1>Senior Frontend Developer</h1>
+        <p class="hero-subtitle">
+          React • Next.js • TypeScript • AI Integration
+        </p>
+        <p class="hero-desc">
+          I build production-ready web and mobile applications with clean
+          architecture, modern UI, and real business impact.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
       </div>
     </section>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack fade-in" id="skills">
-      <div class="tech-container">
-        <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-subtitle">
-          Proficient in modern frontend technologies and frameworks
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        5+ years building scalable frontend applications
+      </p>
+
+      <div class="about-box">
+        <p>
+          Senior Frontend Developer specializing in React, Next.js, and
+          TypeScript. I’ve worked on enterprise systems, AI-powered platforms,
+          and consumer-facing applications used by thousands of users.
         </p>
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div class="tech-icon">⚛️</div>
-            <div class="tech-name">React</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">📱</div>
-            <div class="tech-name">React Native</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🔺</div>
-            <div class="tech-name">Next.js</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">📘</div>
-            <div class="tech-name">TypeScript</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🔄</div>
-            <div class="tech-name">Redux</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🎨</div>
-            <div class="tech-name">SASS</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🅱️</div>
-            <div class="tech-name">Bootstrap</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🎯</div>
-            <div class="tech-name">Material UI</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">💨</div>
-            <div class="tech-name">Tailwind CSS</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🌟</div>
-            <div class="tech-name">Styled Components</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">🌿</div>
-            <div class="tech-name">Vue.js</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">📊</div>
-            <div class="tech-name">Ag-Grid React</div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- Projects Showcase -->
-    <section class="projects fade-in" id="projects">
-      <div class="projects-container">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">
-          A showcase of recent work and professional experience
-        </p>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                ShopVibe - Modern E-Commerce Platform
-              </h3>
-              <p class="project-description">
-                A sophisticated online shopping experience featuring intuitive
-                product browsing, advanced filtering, secure cart management,
-                and responsive design. Showcasing modern e-commerce best
-                practices and seamless user interactions.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">TailwindCSS</span>
-                <span class="tech-tag">Responsive Design</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/portfolio-ecommerce"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href="https://portfolio-ecommerce-sable.vercel.app/"
-                  target="_blank"
-                  class="project-btn btn-demo"
-                >
-                  <span>Live Demo</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                DataViz Pro - Interactive Admin Dashboard
-              </h3>
-              <p class="project-description">
-                A comprehensive admin control panel featuring real-time
-                analytics, interactive charts, data visualization, and
-                responsive tables. Perfect for managing complex business
-                operations with elegant UI/UX.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">Data Visualization</span>
-                <span class="tech-tag">TailwindCSS</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/portfolio-admin-dashboard"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href="https://portfolio-admin-dashboard-inky.vercel.app/"
-                  target="_blank"
-                  class="project-btn btn-demo"
-                >
-                  <span>Live Demo</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                TaskFlow - Redux Task Management System
-              </h3>
-              <p class="project-description">
-                A powerful task management application built with Redux for
-                state management. Features task creation, editing, filtering,
-                and organization with modern TypeScript architecture and
-                responsive design.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Redux Toolkit</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Vite</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/redux-task-manager"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href="https://redux-task-manager-seven.vercel.app/"
-                  target="_blank"
-                  class="project-btn btn-demo"
-                >
-                  <span>Live Demo</span>
-                </a>
-              </div>
-            </div>
-          </div>
+    <!-- PROJECTS -->
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <!-- SECTION HEADER -->
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p>Selected professional work and personal projects</p>
+        </header>
 
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                Mindful Moments - Meditation & Wellness App
-              </h3>
-              <p class="project-description">
-                A serene mobile experience offering nature-based meditation
-                sessions, positive affirmations, and customizable durations.
-                Built with modern navigation and audio integration for mindful
-                living.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React Native</span>
-                <span class="tech-tag">Expo Router</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Context API</span>
-                <span class="tech-tag">NativeWind</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/meditation-app"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
-          </div>
+        <!-- ================= FEATURED PROJECTS ================= -->
+        <section class="projects-group">
+          <h3 class="group-title">Featured / Professional Work</h3>
 
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                Aora - Social Video Sharing Platform
-              </h3>
-              <p class="project-description">
-                A sleek social media app enabling users to register,
-                authenticate, and share short videos with captions. Features
-                secure backend integration, dynamic feeds, and
-                internationalization support.
+          <div class="projects-grid featured">
+            <article class="project-card featured">
+              <h4>Task Management System (TMS)</h4>
+              <p class="project-meta">
+                SwiftX • 2024 – Present • Senior Frontend Engineer
               </p>
-              <div class="project-tech">
-                <span class="tech-tag">React Native</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Appwrite</span>
-                <span class="tech-tag">Expo Router</span>
-                <span class="tech-tag">NativeWind</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/aora-react-native-app"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
-          </div>
+              <p>
+                Automated task creation using voice commands and chatbots,
+                eliminating manual data entry and streamlining daily workflows.
+              </p>
 
-          <div class="project-card">
-            <div
-              class="project-image"
-              style="
-                background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-              "
-            ></div>
-            <div class="project-content">
-              <h3 class="project-title">
-                Prime Beef Steakhouse - Restaurant Website
-              </h3>
-              <p class="project-description">
-                An elegant restaurant website showcasing culinary excellence
-                with table booking functionality, chef profiles, and dining
-                information. Features responsive design and seamless user
-                experience.
+              <ul class="tech-stack">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>NestJS</li>
+                <li>OpenAI API</li>
+                <li>LangChain</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+              </ul>
+            </article>
+            <article class="project-card featured">
+              <h4>Memoa – Collectors Platform</h4>
+              <p class="project-meta">
+                SwiftX • 2024 – Present • Senior Frontend Engineer
               </p>
-              <div class="project-tech">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Responsive Design</span>
-                <span class="tech-tag">Netlify</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/MaiAbdulhamid/restaurant-website"
-                  target="_blank"
-                  class="project-btn btn-github"
-                >
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href="https://kind-knuth-ec39a6.netlify.app/"
-                  target="_blank"
-                  class="project-btn btn-demo"
-                >
-                  <span>Live Demo</span>
-                </a>
-              </div>
-            </div>
+
+              <p>
+                Built intelligent content categorization and search features,
+                allowing collectors to manage large libraries without manual
+                tagging.
+              </p>
+
+              <ul class="tech-stack">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>NestJS</li>
+                <li>OpenAI API</li>
+                <li>LangChain</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+              </ul>
+              <a href="https://memoa.app" target="_blank" class="project-link">
+                Visit Live Site →
+              </a>
+            </article>
+
+            <!-- Rentak -->
+            <article class="project-card featured">
+              <h4>Rentak – Property Management</h4>
+              <p class="project-meta">
+                Rentak • 2023 – 2024 • Frontend Engineer
+              </p>
+
+              <p class="project-summary">
+                Frontend development for a SaaS property management platform,
+                focusing on performance optimization, complex state management,
+                and maintainable UI architecture.
+              </p>
+
+              <ul class="tech-stack">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Redux Toolkit</li>
+                <li>Mantine UI</li>
+              </ul>
+              <a href="https://rentak.com" target="_blank" class="project-link">
+                Visit Live Site →
+              </a>
+            </article>
+
+            <!-- Leadership -->
+            <article class="project-card featured">
+              <h4>9 Production Applications</h4>
+              <p class="project-meta">
+                Rowaad • 2021 – 2023 • Frontend Engineer
+              </p>
+
+              <p class="project-summary">
+                Led frontend delivery for multiple production systems across
+                different industries, ensuring code quality, scalable
+                architecture, and smooth collaboration.
+              </p>
+
+              <ul class="tech-stack">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Redux</li>
+                <li>SASS</li>
+                <li>MUI</li>
+              </ul>
+            </article>
+
+            <!-- Toyota -->
+            <article class="project-card featured">
+              <h4>Toyota Egypt – Official Website</h4>
+              <p class="project-meta">BlueCrunch • 2021 • Frontend Engineer</p>
+
+              <p class="project-summary">
+                Contributed to the official Toyota Egypt website, implementing
+                responsive UI components, Arabic RTL support, and performance
+                improvements for a high-traffic platform.
+              </p>
+
+              <ul class="tech-stack">
+                <li>Vue.js</li>
+                <li>JavaScript</li>
+                <li>SASS</li>
+                <li>Bootstrap</li>
+              </ul>
+
+              <a
+                href="https://toyota.com.eg/ar"
+                target="_blank"
+                class="project-link"
+              >
+                Visit Live Site →
+              </a>
+            </article>
           </div>
-        </div>
+        </section>
+
+        <!-- ================= OTHER PROJECTS ================= -->
+        <section class="projects-group">
+          <h3 class="group-title">Other Projects</h3>
+
+          <div class="projects-grid">
+            <!-- Aora -->
+            <article class="project-card compact">
+              <h4>Aora – Social Video App</h4>
+              <p class="project-meta">Personal Project • React Native</p>
+
+              <p class="project-summary">
+                Mobile social application for sharing short videos with secure
+                authentication, dynamic feeds, and internationalization support.
+              </p>
+
+              <ul class="tech-stack">
+                <li>React Native</li>
+                <li>TypeScript</li>
+                <li>Expo Router</li>
+                <li>Appwrite</li>
+                <li>NativeWind</li>
+              </ul>
+
+              <a
+                href="https://github.com/MaiAbdulhamid/aora-react-native-app"
+                target="_blank"
+                class="project-link"
+              >
+                View Code →
+              </a>
+            </article>
+
+            <!-- Mindful Moments -->
+            <article class="project-card compact">
+              <h4>Mindful Moments – Meditation App</h4>
+              <p class="project-meta">Personal Project • React Native</p>
+
+              <p class="project-summary">
+                Meditation and wellness app offering guided audio sessions,
+                customizable durations, and a clean, calming user experience.
+              </p>
+
+              <ul class="tech-stack">
+                <li>React Native</li>
+                <li>TypeScript</li>
+                <li>Expo Router</li>
+                <li>Context API</li>
+                <li>NativeWind</li>
+              </ul>
+
+              <a
+                href="https://github.com/MaiAbdulhamid/meditation-app"
+                target="_blank"
+                class="project-link"
+              >
+                View Code →
+              </a>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact fade-in" id="contact">
-      <div class="contact-container">
-        <h2 class="section-title">Let's Work Together</h2>
-        <p class="section-subtitle">
-          Ready to bring your ideas to life? Get in touch!
-        </p>
-        <div class="contact-form">
-          <form id="contact-form">
-            <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                class="form-input"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                class="form-input"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                name="project"
-                class="form-input"
-                placeholder="Project Type"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                name="message"
-                class="form-input form-textarea"
-                placeholder="Tell me about your project..."
-                required
-              ></textarea>
-            </div>
-            <input
-              type="hidden"
-              name="access_key"
-              value="e2133067-9d39-464c-9ade-63251281f8fe"
-            />
-            <button
-              type="submit"
-              class="btn-primary center"
-              style="width: 100%"
-            >
-              Send Message
-              <span>✨</span>
-            </button>
-          </form>
-          <div
-            style="
-              margin-top: 2rem;
-              display: flex;
-              justify-content: center;
-              gap: 2rem;
-            "
-          >
-            <a
-              href="mailto:mai.abdelhameed95@gmail.com"
-              style="
-                color: var(--primary);
-                text-decoration: none;
-                font-weight: 600;
-              "
-            >
-              📧 mai.abdelhameed95@gmail.com
-            </a>
-            <a
-              href="tel:01097517284"
-              style="
-                color: var(--primary);
-                text-decoration: none;
-                font-weight: 600;
-              "
-            >
-              📱 01097517284
-            </a>
-          </div>
-        </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Let’s work together</p>
+
+      <div class="contact-box">
+        <a href="mailto:mai.abdelhameed95@gmail.com"
+          >mai.abdelhameed95@gmail.com</a
+        >
+        <a href="https://linkedin.com/in/mai-abdulhamid" target="_blank">
+          LinkedIn Profile
+        </a>
+        <a href="https://github.com/MaiAbdulhamid" target="_blank">
+          GitHub Profile
+        </a>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer
-      style="
-        padding: 2rem;
-        text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      "
-    >
-      <div style="max-width: 1200px; margin: 0 auto">
-        <p style="color: var(--text-muted); margin-bottom: 1rem">
-          © 2024 Mai Abd El-hameed. Crafted with ❤️ using modern web
-          technologies.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 1rem">
-          <a
-            href="https://github.com/MaiAbdulhamid"
-            target="_blank"
-            style="
-              color: var(--primary);
-              text-decoration: none;
-              font-weight: 600;
-            "
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/mai-abdulhamid"
-            target="_blank"
-            style="
-              color: var(--primary);
-              text-decoration: none;
-              font-weight: 600;
-            "
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </footer>
+    <!-- FOOTER -->
+    <footer class="footer">© 2025 Mai Abd El-hameed</footer>
 
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
